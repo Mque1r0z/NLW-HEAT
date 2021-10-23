@@ -3,11 +3,10 @@
 <html>
   <head>
     <title>Matheus Queiroz - DoWhile 2021</title>
-
-    <link rel="stylesheet" href="style.css" />
-    <link rel = "preconnect" href = "https://fonts.googleapis.com">
-    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
-    <link href = "https: //fonts.googleapis.com/css2? family = Roboto & display = swap "rel =" stylesheet ">
+    <link rel="stylesheet" href="style.css" /> <!--importa o style do outro arquivo .css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
     <!--tags sem conteudo fecham nelas mesmas(autofechamento)-->
     <!-- o comando dentro do style eh propriedade: valor;
           o comando vale para todos os h1 do codigo-->
@@ -26,38 +25,60 @@
           />
         </div>
       <!--https://instagram.com/matheus_quene?utm_medium=copy_link-->
-      <h1>Matheus Queiroz</h1>
+      <h1 id="userName">Matheus Queiroz</h1>
       <a href="https://github.com/Mque1r0z"
         ><img src="images/github.svg" alt="icone github" />mqueir0z</a
       >
       <p>Estudante de programação focado em js</p>
-      <ul>
-        <li>
-            <a href="https://youtube.com/channel/UC26oAnO3fOutmYMuLjVQp7Q" target="_blank">
-              <img src="images/youtube.svg" alt="icone youtube" >
+        <ul id="socialLinks">
+          <li class="youtube">
+              <a href="https://youtube.com/channel/UC26oAnO3fOutmYMuLjVQp7Q" target="_blank">
+                <img src="images/youtube.svg" alt="icone youtube" >
+              </a>
+          </li>
+          <li class="facebook">
+            <a href=https://www.facebook.com/matheus.queiroz.96592836 target="_blank">
+              <img src="images/facebook.svg" alt="icone facebook" >
             </a>
-        </li>
-
-        <li>
-          <a href=https://www.facebook.com/matheus.queiroz.96592836 target="_blank">
-            <img src="images/facebook.svg" alt="icone facebook" >
-          </a>
-        </li>
-
-        <li>
-          
-          <a href="https://instagram.com/matheus_quene?utm_medium=copy_link" target="_blank">
-            <img src="images/instagram.svg" alt="icone instagram" >
-          </a>
-        </li>
-
-        <li>
-          <a href="https://twitter.com/mqueir0z" target="_blank">
-            <img src="images/twitter.svg" alt="icone twitter" >
-          </a>
-
-        </li>
+          </li>
+          <li class="instagram">
+            <a href="https://instagram.com/matheus_quene" target="_blank">
+              <img src="images/instagram.svg" alt="icone instagram" >
+            </a>
+          </li>
+          <li class="twitter">
+            <a href="https://twitter.com/mqueir0z" target="_blank">
+              <img src="images/twitter.svg" alt="icone twitter" >
+            </a>
+          </li>
+        </ul>
       </div>
     </main>
+
+    <script>
+     /* const linksSocialMedia = {
+        github: "Mque1r0z",
+        youtube: "c/CortesdoCasimitoOFICIAL",
+        facebook: "CasimiroMiguel93",
+        instagram: "casimiro?utm_medium=copy_link",
+        twitter: "Casimiro?t=V-o7cAS2o-eOsxfQPc2Tow&s=08",
+      }      
+
+     function changeSocialMediaLinks(){
+       for(let li of socialLinks.children){
+         let social = li.getAttribute('class')
+         //alert(social)
+         li.children[0].href = `https://${social}.com/${linksSocialMedia[social]}`
+
+         alert(li.children[0].href)
+       
+        }
+     }
+     changeSocialMediaLinks() 
+     código pra mudar os links. como eu já fiz inicialmente com os meus próprios. esta comentado*/
+
+    
+    </script>
   </body>
 </html>
+
